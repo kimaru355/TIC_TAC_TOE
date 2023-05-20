@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-# prints the board. Accepts board as argument to reflect changes
 def print_board(board):
     print("+-------+-------+-------+")
     print("|       |       |       |")

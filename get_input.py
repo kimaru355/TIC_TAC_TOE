@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
 from random import randrange
 # randrange to generate pc values
 
 
 # generate pc values. Value must be 1-9 and within available spaces
-def pc_random():
+def pc_random(available):
     while True:
         value = randrange(1, 10)
         if value in available:
@@ -13,7 +14,7 @@ def pc_random():
 
 
 # prompts user to enter value. Value must be 1-9 and within available spaces
-def user_random():
+def user_random(available):
     while True:
         value = int(input('Enter a number 1-9: '))
         if 0 < value < 10 and value in available:
